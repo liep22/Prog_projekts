@@ -1,0 +1,52 @@
+﻿Diena;Dienas veids; Dienas temperatūra ;Nakts temperatūra;Mitrums %;Gaisa spiediens mmHg;Vēja brāzmu ātrums(vidējais);Mitrums g/m3;Vēja virziens
+10.03;Apmācies ar sauli;14;0;67%;752;2,10;4,639;Austrumi
+11.03;Apmācies ar sauli;10;0;79%;746;3,50;7,424;Ziemeļaustrumi
+12.03;Apmācies;5;2;88%;749;2,00;5,981;Ziemeļaustrumi
+13.03;Ar nokrišņiem;4;0;94%;748;3,10;5,979;Austrumi
+14.03;Ar nokrišņiem;2;-2;83%;752;4,30;4,614;Ziemeļrietumi
+15.03;Saulains;4;-2;76%;755;4,00;4,834;Ziemeļrietumi
+16.03;Ar nokrišņiem/Apmācies;6;-1;79%;757;3,80;5,735;Rietumi
+17.03;Apmācies;3;-1;78%;761;4,80;4,639;Dienvidrietumi
+18.03;Saulains;4;-1;75%;763;4,80;4,77;Dienvidi
+19.03;Apmācies;5;-1;76%;761;6,00;5,166;Dienvidi
+20.03;Apmācies;7;0;75%;761;4,70;5,813;Dienvidaustrumi
+21.03;Apmācies;7;2;77%;762;4,80;5,968;Dienvidrietumi
+22.03;Apmācies ar sauli;5;3;88%;759;5,80;5,981;Dienvidrietumi
+23.03;Apmācies ar sauli;5;4;86%;754;7,60;5,845;Ziemeļrietumi
+24.03;Apmācies ar sauli/Ar nokrišņiem;4;2;98%;753;6,60;6,233;Ziemeļu                
+25.03;Ar nokrišņiem;3;0;99%;753;3,40;5,889;Dienvidrietumi
+26.03;Apmācies ar sauli;4;-2;91%;757;2,40;5,788;Ziemeļrietumi
+27.03;Apmācies ar sauli;4;-2;85%;762;1,80;5,406;Rietumi
+28.03;Saulains;6;-2;76%;761;2,60;5,518;Rietumi
+29.03;Apmācies ar sauli;5;0;81%;754;3,00;5,506;Ziemeļrietumi
+30.03;Apmācies ar sauli;6;2;88%;751;2,90;6,389;Ziemeļrietumi
+31.03;Apmācies ar sauli;9;3;79%;751;3,60;6,966;Ziemeļrietumi
+01.04;Saulains;12;5;80%;754;2,10;8,527;Rietumi
+02.04;Apmācies ar sauli/Ar nokrišņiem;10;2;91%;751;4,80;8,552;Rietumi
+03.04;Apmācies ar sauli/Ar nokrišņiem;8;4;80%;751;6,60;6,615;Ziemeļrietumi
+04.04;Ar nokrišņiem;3;-1;86%;745;9,30;5,115;Ziemeļi
+05.04;Ar nokrišņiem;2;-1;88%;749;8,80;4,892;Ziemeļi
+06.04;Ar nokrišņiem;2;-3;83%;759;5,10;4,614;Ziemeļi
+07.04;Ar nokrišņiem;2;-1;97%;752;5,90;5,393;Austrumi
+08.04;Ar nokrišņiem;8;1;74%;758;5,80;6,119;Ziemeļi
+09.04;Ar nokrišņiem;8;1;73%;758;5,90;6,036;Ziemeļrietumi
+10.04;Apmācies ar sauli;8;1;77%;761;5,80;6,202;Ziemeļrietumi
+11.04;Apmācies ar sauli;9;1;75%;763;5,90;6,613;Ziemeļi
+12.04;Apmācies ar sauli/Ar nokrišņiem;10;2;72%;765;5,20;6,767;Dienvidrietumi
+13.04;Ar nokrišņiem;9;2;73%;759;5,30;6,437;Dienvidrietumi
+14.04;Apmācies ar sauli;9;1;75%;758;5,40;6,613;Dienvidi
+15.04;Apmācies ar sauli;10;1;73%;762;5,20;6,86;Rietumi
+16.04;Apmācies ar sauli;11;2;69%;795;4,90;6,908;Ziemeļrietumi
+17.04;Apmācies ar sauli/Ar nokrišņiem;11;2;72%;761;5,10;6,349;Austumi
+18.04;Apmācies ar sauli;11;2;69%;761;5,00;7,827;Ziemeļaustrumi
+19.04;Saulains;11;2;66%;763;5,70;7,963;Ziemeļaustrumi
+20.04;Saulains;12;2;67%;762;5,30;7,142;Dienvidrietumi
+21.04;Saulains;11;3;69%;764;4,90;6,908;Rietumi
+22.04;Saulains;12;3;69%;759;4,80;7,355;Rietumi
+23.04;Saulains;13;3;68%;758;5,20;7,713;Dienvidi
+24.04;Saulains;13;4;68%;759;4,90;8,722;Rietumi
+25.04;Apmācies ar sauli/Ar nokrišņiem;13;3;68%;760;4,69;6,391;Austrumi
+26.04;Saulains;14;4;67%;761;4,70;8,083;Dienvidrietumi
+27.04;Saulains;14;4;66%;762;4,80;8,955;Dienvidi
+28.04;Apmācies ar sauli/Ar nokrišņiem;15;4;66%;760;5,00;8,465;Austrumi
+;;;;;;;;
