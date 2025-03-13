@@ -1,8 +1,8 @@
 import flask
 import pandas as pd
 import matplotlib.pyplot as plt
-import tkinter as tk
-from flask import Flask, render_template, url_for
+
+
 
 app = flask.Flask(__name__)
 
@@ -38,11 +38,16 @@ def histogramma():
     df = pd.read_csv('projekts.2_prog.csv', delimiter=';')
     df.columns = df.columns.str.strip()  # Noņemiet atstarpes no kolonnu nosaukumiem
     df = df.dropna()
-    filtrs_df = df[df['Dienas veids'].str.contains('Apmācies', na=False)]
-    filtrs_df.hist(column='Gaisa spiediens mmHg', bins = 10)
-    ax = filtrs_df.hist(column='Gaisa spiediens mmHg', bins=15)
+    
+    df.hist(column='Gaisa spiediens mmHg', bins = 10)
+    ax = df.hist(column='Gaisa spiediens mmHg', bins=40)
     plt.savefig('static/histogramma.png')
-    return flask.render_template('hist.html')
+
+    df_filtrs = df[df['Vēja virziens'].str.contains('Ziemeļi|Dienvidi', na=False)]
+    df_filtrs.plot(kind='scatter', x='Diena', y='Gaisa spiediens mmHg')
+    plt.savefig('static/scatter.png')
+
+    return flask.render_template('hist_scatter.html')
     
 if __name__ == "__main__":
  app.run(debug=True)
