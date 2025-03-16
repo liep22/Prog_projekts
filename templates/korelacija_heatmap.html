@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Heatmap</title>
+    <style>
+        /* Kopējā stila noteikšana */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Lai nebūtu horizontālā ritjosla */
+        }
+        .grafiku-container {
+            display: flex; /* Izveido rindu izkārtojumu */
+            justify-content: space-around; /* Vienmērīgi izlīdzina grafikus horizontāli */
+            align-items: center; /* Vertikāli centrē */
+            flex-wrap: nowrap; /* Neļauj grafikiem pāriet uz nākamo rindu */
+            margin-top: 20px; /* Papildu atstarpe no augšas */
+        }
+        .grafiku-container img {
+            max-width: 40%; /* Katrs grafiks aizņem 40% no konteinera platuma */
+            height: auto; /* Saglabā proporcijas */
+            border-radius: 5px; /* Nedaudz noapaļoti stūri */
+            margin: 10px; /* Atstarpes starp grafikiem */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Korelācijas grafiks: temperatūra un mitrums "</h1>
+    <img src="/static/heatmap.png" alt="Heatmap">
+    <img src="/static/korelacija.png" alt="Korelacija" class="korelacijas-grafiks">
+</body>
+</html>
