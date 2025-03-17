@@ -2,33 +2,33 @@
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <title>Heatmap</title>
+    <title>heatmap_corr</title>
+    <!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafiku pozicionēšana</title>
     <style>
-        /* Kopējā stila noteikšana */
-        html, body {
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
-            width: 100%;
-            overflow-x: hidden; /* Lai nebūtu horizontālā ritjosla */
         }
-        .grafiku-container {
-            display: flex; /* Izveido rindu izkārtojumu */
-            justify-content: space-around; /* Vienmērīgi izlīdzina grafikus horizontāli */
-            align-items: center; /* Vertikāli centrē */
-            flex-wrap: nowrap; /* Neļauj grafikiem pāriet uz nākamo rindu */
-            margin-top: 20px; /* Papildu atstarpe no augšas */
+        #grafiks1 {
+            position: relative;
+            top: 0px; /* Pabīda grafiku 1 uz augšu */
         }
-        .grafiku-container img {
-            max-width: 40%; /* Katrs grafiks aizņem 40% no konteinera platuma */
-            height: auto; /* Saglabā proporcijas */
-            border-radius: 5px; /* Nedaudz noapaļoti stūri */
-            margin: 10px; /* Atstarpes starp grafikiem */
+        #grafiks2 {
+            position: relative;
+            top: -200px; 
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Korelācijas grafiks: temperatūra un mitrums "</h1>
-    <img src="/static/heatmap.png" alt="Heatmap">
-    <img src="/static/korelacija.png" alt="Korelacija" class="korelacijas-grafiks">
+    <h1 style="text-align: center;">Korelācijas grafiks un "siltuma karte": temperatūra un mitrums </h1>
+    <img id="grafiks1" src="/static/heatmap.png" alt="Heatmap">
+    <img id="grafiks2" src="/static/korelacija.png" alt="Korelacija" class="korelacijas-grafiks">
 </body>
 </html>
