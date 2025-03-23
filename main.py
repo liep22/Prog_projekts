@@ -3,10 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 import seaborn as sns
-from flask import Flask, send_file
+from flask import  send_file
 
 
 app = flask.Flask(__name__)
