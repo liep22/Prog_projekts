@@ -58,15 +58,15 @@
     </style>
 </head>
 <body>
-    <h1 style="font-size:60px;">Sveicināti mūsu mājaslapā!</h1>
+    <h1 style="font-size:60px;">Tavi laikapstākļi - Labākā redzējumā!</h1>
     <div class="first-row">
-        <div style="width: 48%; margin-right:10px; margin-bottom: 20px;"><a style="font-size:20px;"  href="{{ url_for('stabini') }}"><button class="grid-element">Apskatīt stabiņu kas piemērota saules mīļiem diagrammu</button></a></div>
-        <div style="width: 48%; margin-left:10px; margin-bottom: 20px;"><a style="font-size:20px;" href="{{ url_for('histogramma') }}"><button class="grid-element">Apskatīt histogrammu un scatter diagrammu par gaisa spiedienu</button></a></div>
+        <div style="width: 48%; margin-right:10px; margin-bottom: 20px;"><a style="font-size:20px;"  href="{{ url_for('stabini') }}"><button class="grid-element">Stabiņu diagramma, kas piemērota saules mīļiem</button></a></div>
+        <div style="width: 48%; margin-left:10px; margin-bottom: 20px;"><a style="font-size:20px;" href="{{ url_for('histogramma') }}"><button class="grid-element">Histogramma un scatter diagramma par gaisa spiedienu</button></a></div>
     </div>
     <div class="second-row">
-        <div style="width: 48%; margin-right:10px;"><a style="font-size:20px;" href="{{ url_for('linijas') }}"><button class="grid-element">Apskatīt līniju diagrammu par vēja brāzmu ātrumu un gaisa temperatūru</button> </a></div>
-        <div style="width: 48%; margin-left:10px;"><a style="font-size:20px;" href="{{ url_for('heatmap') }}"><button class="grid-element">Apskatīt "siltuma karti" par nakts temperatūru un gaisa mitrumu</button> </a></div>
+        <div style="width: 48%; margin-right:10px;"><a style="font-size:20px;" href="{{ url_for('linijas') }}"><button class="grid-element">Līniju diagramma par vēja brāzmu ātrumu un dienas gaisa temperatūru</button> </a></div>
+        <div style="width: 48%; margin-left:10px;"><a style="font-size:20px;" href="{{ url_for('heatmap') }}"><button class="grid-element">Siltuma karte" un korelācijas karte par nakts temperatūru un gaisa mitrumu</button> </a></div>
     </div>
-    <div><a style="font-size:20px;" href="{{ url_for('download_file') }}"><button class="download-btn">Lejupielādēt CSV</button></a></p>
+    <div><a style="font-size:20px;" href="{{ url_for('download_file') }}"><button class="download-btn">Lejupielādēt CSV failu</button></a></p>
 </body>
 </html>
