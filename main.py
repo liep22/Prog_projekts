@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
 import seaborn as sns
-from flask import  send_file
+from flask import send_file
 
 
 app = flask.Flask(__name__)
@@ -23,20 +23,20 @@ def download_file():
 @app.route('/stabini',methods=['GET'] )
 def stabini():
         
-        df = pd.read_csv('projekts.2_prog.csv', delimiter=';')# Nolasiet CSV failu, norādot atdalītāju
-        df.columns = df.columns.str.strip()# Noņemiet atstarpes no kolonnu nosaukumiem
+        df = pd.read_csv('projekts.2_prog.csv', delimiter=';')# Nolasa CSV failu, norādot atdalītāju
+        df.columns = df.columns.str.strip()# Noņem atstarpes no kolonnu nosaukumiem
         df = df.dropna()
         filtered_df = df[df['Dienas veids'].str.contains('Saulains|Apmācies ar sauli', na=False)]
 
-        plt.figure(figsize=(15, 10))  # Piemērs: platums = 20 collas, augstums = 10 collas
-        ax = plt.gca()  # Iegūstiet pašreizējo asu objektu
+        plt.figure(figsize=(15, 10))  
+        ax = plt.gca()  # Iegūst pašreizējo asu objektu
         filtered_df.plot(kind='bar', x='Diena', y='Dienas temperatūra', ax=ax, color = '#faa803')
 
         plt.xticks(rotation=90)  # Rotācija par 90 grādiem, lai vērtības būtu vertikāli
-        plt.xlabel('Dienas')
+        plt.xlabel('Dienas bez nokrišņiem')
         plt.ylabel('Temperatūra')
         plt.title('Temperatūra')
-        plt.subplots_adjust(bottom=0.3)  # Pielāgo figūras marginus
+        plt.subplots_adjust(bottom=0.3) 
         plt.savefig('static/diagramma.png')  # Saglabā attēlu failā
         plt.close()
         return flask.render_template('stabini.html')
@@ -44,16 +44,15 @@ def stabini():
 @app.route('/linijas')
 def linijas():
     df = pd.read_csv('projekts.2_prog.csv', delimiter=';')
-    df.columns = df.columns.str.strip()  # Noņemiet atstarpes no kolonnu nosaukumiem
+    df.columns = df.columns.str.strip()  # Noņem atstarpes no kolonnu nosaukumiem
     df = df.dropna()
     df = df.sort_values(by='Diena')
 
     plt.figure()
     plt.plot(df['Diena'], df['Dienas temperatūra'], marker='o', color='#f9e605', label='Temperatūra (°C)')
     plt.plot(df['Diena'], df['Vēja brāzmu ātrums(vidējais)'], marker='s', color='#05c2f9', label='Vēja brāzmas (m/s)')
-    plt.title('Temperatūra un vēja brāzmas salīdzinājums')
-    plt.xlabel('Dienas')
-    plt.ylabel('Vērtības')
+    plt.xlabel('Dienas temperatūra')
+    plt.ylabel('Vēja brāzmu vērtības')
     plt.legend() 
     plt.grid(True)
     plt.savefig('static/line.png')
@@ -81,9 +80,6 @@ def histogramma():
     plt.close()
     return flask.render_template('hist_scatter.html')
     
-
-
-
 
 @app.route('/heatmap')
 def heatmap():
