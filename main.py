@@ -29,10 +29,10 @@ def stabini():
         filtered_df = df[df['Dienas veids'].str.contains('Saulains|Apmācies ar sauli', na=False)]
 
         plt.figure(figsize=(15, 10))  
-        ax = plt.gca()  # Iegūst pašreizējo asu objektu
+        ax = plt.gca()  
         filtered_df.plot(kind='bar', x='Diena', y='Dienas temperatūra', ax=ax, color = '#faa803')
 
-        plt.xticks(rotation=90)  # Rotācija par 90 grādiem, lai vērtības būtu vertikāli
+        plt.xticks(rotation=90) 
         plt.xlabel('Dienas bez nokrišņiem')
         plt.ylabel('Temperatūra')
         plt.title('Temperatūra')
@@ -44,7 +44,7 @@ def stabini():
 @app.route('/linijas')
 def linijas():
     df = pd.read_csv('projekts.2_prog.csv', delimiter=';')
-    df.columns = df.columns.str.strip()  # Noņem atstarpes no kolonnu nosaukumiem
+    df.columns = df.columns.str.strip() 
     df = df.dropna()
     df = df.sort_values(by='Diena')
 
@@ -67,8 +67,7 @@ def histogramma():
     df = df.dropna()
     
     plt.figure()
-    df.hist(column='Gaisa spiediens mmHg', bins = 10, color = '#fa3b03')
-    ax = df.hist(column='Gaisa spiediens mmHg', bins=40, color = '#fa3b03')
+    df.hist(column='Gaisa spiediens mmHg', bins = 40, color = '#fa3b03')
     plt.savefig('static/histogramma.png')
     plt.clf()
     plt.close()
